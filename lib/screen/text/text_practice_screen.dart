@@ -8,7 +8,7 @@ class TextPracticeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Text 실습")),
       body: SizedBox(
-        width: double.infinity, //디바이스를 꽉 채우기
+        width: double.infinity,
         child: Text(
           "Text 위젯 실습입니다. 색상은 deepOrange",
           style: TextStyle(

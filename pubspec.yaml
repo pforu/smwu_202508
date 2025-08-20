@@ -87,3 +87,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+  assets:
+    - assets/ #이 폴더 아래의 이미지를 다 사용하겠다 , 단 그 하위 폴더 내의 이미지는 참조 불가
