@@ -12,6 +12,7 @@ import 'package:smwu_202508/main.dart';
 
 import 'method.dart';
 import 'collections.dart';
+import 'conditional.dart';
 
 void main() {
   Method();
@@ -22,6 +23,8 @@ void main() {
   collection.mapController();
   collection.setController();
 
-
+  var conditional = Conditional();
+  conditional.simpleIf();
+  conditional.simpleSwitch();
 
 }
