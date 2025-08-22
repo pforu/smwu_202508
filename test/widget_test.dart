@@ -10,21 +10,26 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:smwu_202508/main.dart';
 
+import 'for_loop.dart';
+import 'for_loop_practice.dart';
 import 'method.dart';
 import 'collections.dart';
 import 'conditional.dart';
 
 void main() {
-  Method();
+  // Method();
+  //
+  // Collections collection = Collections();
+  // collection.listAdd();
+  // collection.listRemove();
+  // collection.mapController();
+  // collection.setController();
+  //
+  // var conditional = Conditional();
+  // conditional.simpleIf();
+  // conditional.simpleSwitch();
 
-  Collections collection = Collections();
-  collection.listAdd();
-  collection.listRemove();
-  collection.mapController();
-  collection.setController();
-
-  var conditional = Conditional();
-  conditional.simpleIf();
-  conditional.simpleSwitch();
+  // ForLoop();
+  ForLoopPractice();
 
 }
