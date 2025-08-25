@@ -24,11 +24,13 @@ class _TodoScreenState extends State<TodoScreen> {
           Row(
             children: [
               Expanded(child: TextFormField(controller: controller,)),
-              //expanded : 현재 주어진 영역의 빈 공간을 최대한 채움
+              //expanded : 현재 주어진 영역의 빈 공간을 최대한 채움, 반응형 가능
               //textformfield : 문자열 입력받기
               TextButton(onPressed: () {
                 /// 3. todolist에 새로운 todomodel 생성
                 todoList.add(TodoModel(controller.text, false));
+                //var todoModel = TodoModel(controller.text, false
+                //todoList.add(todoModel)
                 setState(() {});
                 //print(controller.text);
               }, child: Text("등록"))
