@@ -7,6 +7,7 @@ import 'package:smwu_202508/screen/future/future_screen.dart';
 import 'package:smwu_202508/screen/image/image_practice_screen.dart';
 import 'package:smwu_202508/screen/image/image_screen.dart';
 import 'package:smwu_202508/screen/navigator/navigator_screen.dart';
+import 'package:smwu_202508/screen/network/network_practice_screen.dart';
 import 'package:smwu_202508/screen/network/network_screen.dart';
 import 'package:smwu_202508/screen/row/column_row_practice_screen.dart';
 import 'package:smwu_202508/screen/row/row_practice_screen.dart';
@@ -255,6 +256,8 @@ class ButtonScreen extends StatelessWidget {
               button(context, NetworkScreen(), "Network"),
               SizedBox(height: 10),
               button(context, FutureScreen(), "Future"),
+              SizedBox(height: 10),
+              button(context, NetworkPracticeScreen(), "Network 실습"),
             ],
           ),
         ),
