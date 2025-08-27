@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class News {
-  String title = "ASDFASDFASDFASDFASDFASDFASDFASDF";
-  String contents = "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf";
+class NewsModel {
+  String title = "ASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDFASDF";
+  String contents = "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf";
   String name = "ooo";
   String date = "2025.08.27 04:46";
 
@@ -19,9 +19,9 @@ class NetworkPracticeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<News> newsList = [];
+    List<NewsModel> newsList = [];
     for (int i = 0; i < 10; i++) {
-      News news = News();
+      NewsModel news = NewsModel();
       newsList.add(news);
     }
     return Scaffold(
@@ -31,43 +31,50 @@ class NetworkPracticeScreen extends StatelessWidget {
           itemCount: 10,
           itemBuilder: (context, index) {
             return Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              // mainAxisAlignment: MainAxisAlignment.center,
+              // crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Container(width: 100, height: 100, color: Colors.grey,),
-                Column(
-                  children: [
-                    Text(
-                      newsList[index].title,
-                      style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
+                Container(width: 100, height: 100, color: Colors.grey, padding: EdgeInsets.all(10),),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(24.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          newsList[index].title,
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          // textAlign: TextAlign.left,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        Text(
+                          newsList[index].contents,
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        SizedBox(height: 10,),
+                        Text(
+                          newsList[index].name,
+                          style: TextStyle(
+                            fontSize: 10,
+                          ),
+                        ),
+                        Text(
+                          newsList[index].date,
+                          style: TextStyle(
+                            fontSize: 10,
+                          ),
+                        ),
+                      ],
                     ),
-                    Text(
-                      newsList[index].contents,
-                      style: TextStyle(
-                        fontSize: 25,
-                      ),
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    SizedBox(height: 10,),
-                    Text(
-                      newsList[index].name,
-                      style: TextStyle(
-                        fontSize: 10,
-                      ),
-                    ),
-                    Text(
-                      newsList[index].date,
-                      style: TextStyle(
-                        fontSize: 10,
-                      ),
-                    ),
-                  ],
+                  ),
                 )
 
               ],
