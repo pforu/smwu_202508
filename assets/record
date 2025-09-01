@@ -1,7 +1,0 @@
-https://9d8cdaee67f2.ngrok-free.app
-/swagger-ui/index.html
-
-alt f4, dart~~ network
-
-// pubspec.yaml, 37line -> api 관련 라이브러리
-// jinhan38 blog -> cors : get 해오기
