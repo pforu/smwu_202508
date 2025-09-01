@@ -74,6 +74,12 @@
       "languageVersion": "3.8"
     },
     {
+      "name": "get",
+      "rootUri": "file:///C:/Users/HYESEO/AppData/Local/Pub/Cache/hosted/pub.dev/get-4.7.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///C:/Users/HYESEO/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.1.2",
       "packageUri": "lib/",

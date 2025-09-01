@@ -14,6 +14,8 @@ class NewsModel {
   }
 }
 
+
+
 class NetworkPracticeScreen extends StatelessWidget {
   const NetworkPracticeScreen({super.key});
 
@@ -32,7 +34,7 @@ class NetworkPracticeScreen extends StatelessWidget {
           itemBuilder: (context, index) {
             return Row(
               // mainAxisAlignment: MainAxisAlignment.center,
-              // crossAxisAlignment: CrossAxisAlignment.center,
+              // crossAxisAlignment: CrossAxisAlignment.start, //부모랑
               children: [
                 Container(width: 100, height: 100, color: Colors.grey, padding: EdgeInsets.all(10),),
                 Expanded(
@@ -40,6 +42,7 @@ class NetworkPracticeScreen extends StatelessWidget {
                     padding: const EdgeInsets.all(24.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      // mainAxisAlignment: MainAxisAlignment.start, //자식 세트
                       children: [
                         Text(
                           newsList[index].title,
@@ -64,12 +67,14 @@ class NetworkPracticeScreen extends StatelessWidget {
                           newsList[index].name,
                           style: TextStyle(
                             fontSize: 10,
+                            color: Colors.grey
                           ),
                         ),
                         Text(
                           newsList[index].date,
                           style: TextStyle(
                             fontSize: 10,
+                            color: Colors.grey
                           ),
                         ),
                       ],
